@@ -64,6 +64,9 @@
       height: 100%;
       background: transparent;
       padding: 0;
+      
+      /*click to show it*/
+      display: none;
     }
     
     #grid p{      
@@ -72,9 +75,14 @@
       border: 1px solid white;
     }
     
+    input:checked + #content #grid{
+      display: grid;
+    }
+    
 	</style>
 </head>
 <body>
+  <input type="checkbox"/>
   <div id="content">
         <!--This div is wrapping the rest-->
         <div id="grid">
